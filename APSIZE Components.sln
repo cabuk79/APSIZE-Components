@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31919.166
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APSIZE.Component.Templates", "APSIZE.Component.Templates\APSIZE.Component.Templates.csproj", "{5BDC67EA-1A32-4893-9EE3-5481269C5E8A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5BDC67EA-1A32-4893-9EE3-5481269C5E8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BDC67EA-1A32-4893-9EE3-5481269C5E8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BDC67EA-1A32-4893-9EE3-5481269C5E8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BDC67EA-1A32-4893-9EE3-5481269C5E8A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9BEA77EA-31D9-4967-BA39-DD59F5FDE495}
+	EndGlobalSection
+EndGlobal
