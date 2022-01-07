@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "Hash": "AkmCXuxmivB6b9rK+gUdSg1clbO/OfkxIfNo8cvH6ag=",
+  "Source": "APSIZE.Component.Templates",
+  "BasePath": "_content/APSIZE.Component.Templates",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "APSIZE.Component.Templates\\wwwroot",
+      "Source": "APSIZE.Component.Templates",
+      "ContentRoot": "C:\\Users\\cabuk\\source\\repos\\APSIZE Components\\APSIZE.Component.Templates\\wwwroot\\",
+      "BasePath": "_content/APSIZE.Component.Templates",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\cabuk\\source\\repos\\APSIZE Components\\APSIZE.Component.Templates\\obj\\Debug\\net6.0\\scopedcss\\bundle\\APSIZE.Component.Templates.styles.css",
+      "SourceId": "APSIZE.Component.Templates",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\cabuk\\source\\repos\\APSIZE Components\\APSIZE.Component.Templates\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
+      "BasePath": "_content/APSIZE.Component.Templates",
+      "RelativePath": "APSIZE.Component.Templates.styles.css",
+      "AssetKind": "All",
+      "AssetMode": "CurrentProject",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ApplicationBundle",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\cabuk\\source\\repos\\APSIZE Components\\APSIZE.Component.Templates\\obj\\Debug\\net6.0\\scopedcss\\bundle\\APSIZE.Component.Templates.styles.css"
+    },
+    {
+      "Identity": "C:\\Users\\cabuk\\source\\repos\\APSIZE Components\\APSIZE.Component.Templates\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\APSIZE.Component.Templates.bundle.scp.css",
+      "SourceId": "APSIZE.Component.Templates",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\cabuk\\source\\repos\\APSIZE Components\\APSIZE.Component.Templates\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
+      "BasePath": "_content/APSIZE.Component.Templates",
+      "RelativePath": "APSIZE.Component.Templates.bundle.scp.css",
+      "AssetKind": "All",
+      "AssetMode": "Reference",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ProjectBundle",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\cabuk\\source\\repos\\APSIZE Components\\APSIZE.Component.Templates\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\APSIZE.Component.Templates.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\cabuk\\source\\repos\\APSIZE Components\\APSIZE.Component.Templates\\wwwroot\\background.png",
+      "SourceId": "APSIZE.Component.Templates",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\cabuk\\source\\repos\\APSIZE Components\\APSIZE.Component.Templates\\wwwroot\\",
+      "BasePath": "_content/APSIZE.Component.Templates",
+      "RelativePath": "background.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\background.png"
+    },
+    {
+      "Identity": "C:\\Users\\cabuk\\source\\repos\\APSIZE Components\\APSIZE.Component.Templates\\wwwroot\\exampleJsInterop.js",
+      "SourceId": "APSIZE.Component.Templates",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\cabuk\\source\\repos\\APSIZE Components\\APSIZE.Component.Templates\\wwwroot\\",
+      "BasePath": "_content/APSIZE.Component.Templates",
+      "RelativePath": "exampleJsInterop.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\exampleJsInterop.js"
+    }
+  ]
+}

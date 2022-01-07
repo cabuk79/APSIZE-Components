@@ -1,0 +1,61 @@
+﻿
+<CascadingValue Value="this">
+    <div class="row">
+        <div class="btn-group" role="group">
+            @foreach (ApTabPage tabPage in Pages)
+            {
+                <button type="button"
+                    class="@GetButtonClass(tabPage)"
+                    @onclick=@( () => ActivatePage(tabPage) )>
+
+                    @if(@tabPage.Image != "")
+                    {
+                       <span><img src="@tabPage.Image" height="@tabPage.ImageHeight"
+                           width="@tabPage.ImageWidth"></span>
+                    }
+
+                    @tabPage.Text
+                </button>   
+            }
+        </div>   
+    </div>
+
+    <div class="row">
+        <h1 class="testing">Testing</h1>
+        @ChildContent
+    </div>
+
+
+</CascadingValue>
+
+@*@GetButtonClass(tabPage)*@
+
+@code {
+    [Parameter]
+    public RenderFragment ChildContent { get; set; }
+
+    public ApTabPage ActivePage { get; set; }
+
+    List<ApTabPage> Pages = new();
+
+    internal void AddPage(ApTabPage tabPage)
+    {
+        Pages.Add(tabPage);
+
+        if(Pages.Count == 1)
+        {
+            ActivePage = tabPage;
+            StateHasChanged();
+        }
+    }
+
+    string GetButtonClass(ApTabPage page)
+    {
+      return page == ActivePage ? "btn-tab-selected" : "btn-tab-notselected";
+    }
+
+    void ActivatePage(ApTabPage page)
+    {
+      ActivePage = page;
+    }
+}

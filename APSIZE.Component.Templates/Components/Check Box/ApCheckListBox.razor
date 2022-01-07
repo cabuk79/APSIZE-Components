@@ -1,0 +1,85 @@
+﻿@typeparam TItem
+
+<div class="container" style="@CheckBoxBackColourStyle; @ConatinerHeightStyle; @ContainerWidthStyle; 
+    @CheckedBorderColourStyle">
+
+    @foreach (var item in Items)
+    {
+        var Id = Guid.NewGuid();
+
+        <label for="@Id" class="option_item">
+            <!-- Check to see if the checkbox needs to be checked or not from the user data by checking if any of the items are already in the SelectedList -->
+            @if (SelectedItems.Contains(item))
+            {
+                <input id="@Id" type="checkbox" class="checkbox" checked @onchange="_ => HandleChange(item)" disabled="@Disabled"/>
+                //var i = 5;
+            }
+            else
+            {
+                <input id="@Id" type="checkbox" class="checkbox" @onchange="_ => HandleChange(item)" disabled="@Disabled" />
+                //var ii = 6;
+            }
+            <div class="option_inner theme">
+                <div class="tickmark"></div>
+                <div class="name">
+                    @ItemTemplate(item)
+                </div>
+            </div>
+        </label>
+    }
+
+</div>
+
+
+
+@code {
+    [Parameter]
+    public IEnumerable<TItem> Items { get; set; }
+
+    [Parameter]
+    public RenderFragment<TItem> ItemTemplate { get; set; }
+
+    [Parameter]
+    public List<TItem> SelectedItems { get; set; } = new();
+
+    [Parameter]
+    public EventCallback<List<TItem>> SelectedItemsChanged { get; set; }
+
+    [Parameter]
+    public string Disabled { get; set; }
+
+
+    //Handles any change of each check box from checked to not checked
+    void HandleChange(TItem item)
+    {
+        if (SelectedItems.Contains(item))
+        {
+            SelectedItems.Remove(item);
+        }
+        else
+        {
+            SelectedItems.Add(item);
+        }
+
+        SelectedItemsChanged.InvokeAsync(SelectedItems);
+    }
+
+    #region CSS Styling
+
+    [Parameter]
+    public string CheckBoxBackColour { get; set; }
+    string CheckBoxBackColourStyle => string.IsNullOrWhiteSpace(CheckBoxBackColour) ? "" : "--bg-color:" + CheckBoxBackColour;
+
+    [Parameter]
+    public string ContainerHeight { get; set; }
+    [Parameter]
+    public string ContainerWidth { get; set; }
+    string ConatinerHeightStyle => string.IsNullOrWhiteSpace(ContainerHeight) ? "" : "--cont-height:" + ContainerHeight;
+    string ContainerWidthStyle => string.IsNullOrWhiteSpace(ContainerWidth) ? "" : "--cont-width:" + ContainerWidth;
+
+    [Parameter]
+    public string CheckedBorderColour { get; set; }
+    string CheckedBorderColourStyle => string.IsNullOrWhiteSpace(CheckedBorderColour) ? "" : "--border-color-checked:" + CheckedBorderColour;
+
+    #endregion
+}

@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "5bdc67ea-1a32-4893-9ee3-5481269c5e8a": {
+      "ProjectGuid": "5bdc67ea-1a32-4893-9ee3-5481269c5e8a",
+      "DisplayName": "APSIZE.Component.Templates",
+      "ColorIndex": 0
+    },
+    "0b1fc909-6fe2-487a-b3d2-b86ab1d88574": {
+      "ProjectGuid": "0b1fc909-6fe2-487a-b3d2-b86ab1d88574",
+      "DisplayName": "APSIZE-Component Examples",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}

@@ -1,0 +1,26 @@
+
+.btn-tab-notselected[b-w8w5skxcg6] {
+    width: fit-content;
+    padding: 5px 20px 5px 20px;
+    margin: 0px 10px 0px 0px; 
+    background-color: #0094ff;
+    border: 0px;
+    color: white;
+}
+
+.btn-tab-selected[b-w8w5skxcg6] {
+    width: fit-content;
+    padding: 5px 20px 5px 20px;
+    margin: 0px 10px 0px 0px;
+    background-color: red;
+    border: 0px;
+    color: white;
+}
+
+.btn-tab:hover[b-w8w5skxcg6] {
+    background-color: #0080ff;
+}
+
+.testing[b-w8w5skxcg6] {
+    font-size: 10px;
+}

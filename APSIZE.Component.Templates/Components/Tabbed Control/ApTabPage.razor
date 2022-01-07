@@ -1,0 +1,38 @@
+﻿@if(Parent.ActivePage == this)
+{
+    @ChildContent
+}
+
+@code {
+    [CascadingParameter]
+    private ApTabControl Parent { get; set; }
+
+    [Parameter]
+    public RenderFragment ChildContent { get; set; }
+
+    [Parameter]
+    public string Text { get; set; }
+
+    [Parameter]
+    public string Image { get; set; } = "";
+
+    [Parameter]
+    public string ImageHeight { get; set; } = "10px";
+
+    [Parameter]
+    public string ImageWidth { get; set; } = "10px";
+
+    protected override void OnInitialized()
+    {
+        Parent.AddPage(this);
+
+        if(Parent.ActivePage == null)
+        {
+            throw new ArgumentException(nameof(Parent), "Tab page must exist withing a TabControl");
+            base.OnInitialized();
+        }
+
+        
+    }
+
+}

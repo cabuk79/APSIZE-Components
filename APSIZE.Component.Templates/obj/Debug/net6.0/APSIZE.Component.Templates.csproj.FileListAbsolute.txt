@@ -1,0 +1,19 @@
+C:\Users\cabuk\source\repos\APSIZE Components\APSIZE.Component.Templates\bin\Debug\net6.0\APSIZE.Component.Templates.staticwebassets.runtime.json
+C:\Users\cabuk\source\repos\APSIZE Components\APSIZE.Component.Templates\bin\Debug\net6.0\APSIZE.Component.Templates.deps.json
+C:\Users\cabuk\source\repos\APSIZE Components\APSIZE.Component.Templates\bin\Debug\net6.0\APSIZE.Component.Templates.dll
+C:\Users\cabuk\source\repos\APSIZE Components\APSIZE.Component.Templates\bin\Debug\net6.0\ref\APSIZE.Component.Templates.dll
+C:\Users\cabuk\source\repos\APSIZE Components\APSIZE.Component.Templates\bin\Debug\net6.0\APSIZE.Component.Templates.pdb
+C:\Users\cabuk\source\repos\APSIZE Components\APSIZE.Component.Templates\obj\Debug\net6.0\APSIZE.Component.Templates.csproj.AssemblyReference.cache
+C:\Users\cabuk\source\repos\APSIZE Components\APSIZE.Component.Templates\obj\Debug\net6.0\APSIZE.Component.Templates.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cabuk\source\repos\APSIZE Components\APSIZE.Component.Templates\obj\Debug\net6.0\APSIZE.Component.Templates.AssemblyInfoInputs.cache
+C:\Users\cabuk\source\repos\APSIZE Components\APSIZE.Component.Templates\obj\Debug\net6.0\APSIZE.Component.Templates.AssemblyInfo.cs
+C:\Users\cabuk\source\repos\APSIZE Components\APSIZE.Component.Templates\obj\Debug\net6.0\APSIZE.Component.Templates.csproj.CoreCompileInputs.cache
+C:\Users\cabuk\source\repos\APSIZE Components\APSIZE.Component.Templates\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\cabuk\source\repos\APSIZE Components\APSIZE.Component.Templates\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\cabuk\source\repos\APSIZE Components\APSIZE.Component.Templates\obj\Debug\net6.0\scopedcss\bundle\APSIZE.Component.Templates.styles.css
+C:\Users\cabuk\source\repos\APSIZE Components\APSIZE.Component.Templates\obj\Debug\net6.0\APSIZE.Component.Templates.dll
+C:\Users\cabuk\source\repos\APSIZE Components\APSIZE.Component.Templates\obj\Debug\net6.0\ref\APSIZE.Component.Templates.dll
+C:\Users\cabuk\source\repos\APSIZE Components\APSIZE.Component.Templates\obj\Debug\net6.0\APSIZE.Component.Templates.pdb
+C:\Users\cabuk\source\repos\APSIZE Components\APSIZE.Component.Templates\obj\Debug\net6.0\scopedcss\Components\Check Box\ApCheckListBox.razor.rz.scp.css
+C:\Users\cabuk\source\repos\APSIZE Components\APSIZE.Component.Templates\obj\Debug\net6.0\scopedcss\projectbundle\APSIZE.Component.Templates.bundle.scp.css
+C:\Users\cabuk\source\repos\APSIZE Components\APSIZE.Component.Templates\obj\Debug\net6.0\scopedcss\Components\Tabbed Control\ApTabControl.razor.rz.scp.css

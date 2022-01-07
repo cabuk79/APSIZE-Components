@@ -15,4 +15,10 @@
     <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="6.0.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Components\Dropdown\" />
+    <Folder Include="Components\Datatable\" />
+    <Folder Include="Components\Radio Button\" />
+  </ItemGroup>
+
 </Project>

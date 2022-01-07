@@ -1,0 +1,101 @@
+/*.option_inner {
+    --bg-color: #b6ff00;
+}
+*/
+/*body {
+    background: #ff0000;
+}*/
+
+.wrapper[b-hu24382mj7] {
+    width: 780px;
+    margin: 100px auto 0;
+}
+
+    .wrapper .title[b-hu24382mj7] {
+        font-size: 24px;
+        color: #fff;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+.container[b-hu24382mj7] {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+    .container .option_item[b-hu24382mj7] {
+        display: block;
+        position: relative;
+        width: var(--cont-width, 100px); /*500px;*/
+        height: var(--cont-height, 100px); /* 500px;*/
+        margin: 10px;
+    }
+
+        .container .option_item .checkbox[b-hu24382mj7] {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            opacity: 0;
+        }
+
+.option_item .option_inner[b-hu24382mj7] {
+    width: 100%;
+    height: 100%;
+    background: var(--bg-color, #ff0000);
+    border-radius: 5px;
+    text-align: center;
+    padding: 58px 40px;
+    cursor: pointer;
+    color: #585c68;
+    display: block;
+    border: 5px solid transparent;
+    position: relative;
+}
+
+    .option_item .option_inner .icon[b-hu24382mj7] {
+        margin-bottom: 10px;
+    }
+
+        .option_item .option_inner .icon .fab[b-hu24382mj7] {
+            font-size: 32px;
+        }
+
+    .option_item .option_inner .name[b-hu24382mj7] {
+        user-select: none;
+    }
+
+.option_item .checkbox:checked ~ .option_inner.theme[b-hu24382mj7] {
+    border-color: var(--border-color-checked, #ff0000);
+    color: #ff0000;
+}
+
+.option_item .option_inner .tickmark[b-hu24382mj7] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 20px solid;
+    border-color: #000 transparent transparent #000;
+    display: none;
+}
+
+    .option_item .option_inner .tickmark[b-hu24382mj7]:before {
+        content: "";
+        position: absolute;
+        top: -18px;
+        left: -18px;
+        width: 15px;
+        height: 5px;
+        border: 3px solid;
+        border-color: transparent transparent #fff #fff;
+        transform: rotate(-45deg);
+    }
+
+.option_item .checkbox:checked ~ .option_inner .tickmark[b-hu24382mj7] {
+    display: block;
+}
+
+.option_item .option_inner.theme .tickmark[b-hu24382mj7] {
+    border-color: var(--border-color-checked, #ff0000) transparent transparent var(--border-color-checked, #ff0000); /*#ff0000 transparent transparent #ff0000;*/
+}

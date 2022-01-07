@@ -1,0 +1,59 @@
+﻿@page "/checkbox-list"
+
+<h2>Checkbox Square List</h2>
+
+<p>This component allows</p>
+
+<ApTabControl>
+    <ApTabPage Text="Demo" 
+    Image="https://image.shutterstock.com/image-photo/word-demo-appearing-behind-torn-260nw-1782295403.jpg"
+    ImageHeight="50px" ImageWidth="50px">
+        <input type="text" @bind="@CheckBocBackColourString" />
+
+        <br />
+        @CheckBocBackColourString
+
+        <ApCheckListBox Items="ItemsList" ContainerHeight="500px" ContainerWidth="150px" CheckBoxBackColour="@CheckBocBackColourString"
+                    CheckedBorderColour="red">
+            <ItemTemplate>
+                <img src="https://cdn1.vectorstock.com/i/1000x1000/31/95/user-sign-icon-person-symbol-human-avatar-vector-12693195.jpg"
+                 width="150px" height="150px" /><br />
+                @context
+            </ItemTemplate>
+        </ApCheckListBox>
+    </ApTabPage>
+    <ApTabPage Text="Code">
+        <pre>
+            <code>
+                //Handles any change of each check box from checked to not checked
+                void HandleChange(TItem item)
+                {
+                    if (SelectedItems.Contains(item))
+                    {
+                        SelectedItems.Remove(item);
+                    }
+                    else
+                    {
+                        SelectedItems.Add(item);
+                    }
+
+                    SelectedItemsChanged.InvokeAsync(SelectedItems);
+                }
+            </code>
+        </pre>
+    </ApTabPage>
+</ApTabControl>
+
+
+@code {
+
+    public string CheckBocBackColourString { get; set; }
+
+    public List<string> ItemsList { get; set; } = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        ItemsList.Add("Craig");
+        ItemsList.Add("Steve");
+    }
+}
