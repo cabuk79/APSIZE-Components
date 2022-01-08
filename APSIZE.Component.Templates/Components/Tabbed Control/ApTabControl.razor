@@ -1,4 +1,5 @@
 ﻿
+
 <CascadingValue Value="this">
     <div class="row">
         <div class="btn-group" role="group">
@@ -7,21 +8,27 @@
                 <button type="button"
                     class="@GetButtonClass(tabPage)"
                     @onclick=@( () => ActivatePage(tabPage) )>
+                   
+                    <div class="tab-button-layout">
+                        @if(@tabPage.Image != "" && @tabPage.Icon == "")
+                        {
+                            <span><img src="@tabPage.Image" height="@tabPage.ImageHeight"
+                                width="@tabPage.ImageWidth"></span>
+                        }
 
-                    @if(@tabPage.Image != "")
-                    {
-                       <span><img src="@tabPage.Image" height="@tabPage.ImageHeight"
-                           width="@tabPage.ImageWidth"></span>
-                    }
-
-                    @tabPage.Text
+                        @if(@tabPage.Icon != "" && @tabPage.Image == "")
+                        {
+                            <span class="@tabPage.Icon" aria-hidden="true"></span>
+                        }
+                   
+                        @tabPage.Text                    
+                    </div>
                 </button>   
             }
         </div>   
     </div>
 
-    <div class="row">
-        <h1 class="testing">Testing</h1>
+    <div class="tab-content">
         @ChildContent
     </div>
 

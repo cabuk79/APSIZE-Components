@@ -1,9 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "YWyHE6AUX8kcpZoGR/VRcNtTq//5s28mcZu0HDII2+itw43Lt/kWVUMdtcgAn3lLv5AmJJBkYsC7a4188TJX8g==",
+  "dgSpecHash": "5qlM2tsgQ4L57fjt8lArCizgR3EJ3GFOmoszJ6bWoFu9bt0WRh9rA+eWl9mjfiWDwoLwkfiJ8i1v3cJIbJZ8Fg==",
   "success": true,
   "projectFilePath": "C:\\Users\\cabuk\\source\\repos\\APSIZE Components\\APSIZE-Component Examples\\APSIZE-Component Examples.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\cabuk\\.nuget\\packages\\blazorise\\0.9.5.4\\blazorise.0.9.5.4.nupkg.sha512",
+    "C:\\Users\\cabuk\\.nuget\\packages\\blazorise.icons.fontawesome\\0.9.5.4\\blazorise.icons.fontawesome.0.9.5.4.nupkg.sha512",
+    "C:\\Users\\cabuk\\.nuget\\packages\\bootstrap\\5.1.3\\bootstrap.5.1.3.nupkg.sha512",
+    "C:\\Users\\cabuk\\.nuget\\packages\\fontawesome\\4.7.0\\fontawesome.4.7.0.nupkg.sha512",
     "C:\\Users\\cabuk\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.0\\microsoft.aspnetcore.authorization.6.0.0.nupkg.sha512",
     "C:\\Users\\cabuk\\.nuget\\packages\\microsoft.aspnetcore.components\\6.0.0\\microsoft.aspnetcore.components.6.0.0.nupkg.sha512",
     "C:\\Users\\cabuk\\.nuget\\packages\\microsoft.aspnetcore.components.analyzers\\6.0.0\\microsoft.aspnetcore.components.analyzers.6.0.0.nupkg.sha512",

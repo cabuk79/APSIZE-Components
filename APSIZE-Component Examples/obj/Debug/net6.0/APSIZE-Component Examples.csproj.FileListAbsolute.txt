@@ -822,3 +822,11 @@ C:\Users\cabuk\source\repos\APSIZE Components\APSIZE-Component Examples\obj\Debu
 C:\Users\cabuk\source\repos\APSIZE Components\APSIZE-Component Examples\obj\Debug\net6.0\APSIZE-Component Examples.dll
 C:\Users\cabuk\source\repos\APSIZE Components\APSIZE-Component Examples\obj\Debug\net6.0\ref\APSIZE-Component Examples.dll
 C:\Users\cabuk\source\repos\APSIZE Components\APSIZE-Component Examples\obj\Debug\net6.0\APSIZE-Component Examples.pdb
+C:\Users\cabuk\source\repos\APSIZE Components\APSIZE-Component Examples\bin\Debug\net6.0\wwwroot\_framework\Blazorise.dll
+C:\Users\cabuk\source\repos\APSIZE Components\APSIZE-Component Examples\bin\Debug\net6.0\wwwroot\_framework\Blazorise.Icons.FontAwesome.dll
+C:\Users\cabuk\source\repos\APSIZE Components\APSIZE-Component Examples\bin\Debug\net6.0\wwwroot\_framework\Blazorise.Icons.FontAwesome.dll.gz
+C:\Users\cabuk\source\repos\APSIZE Components\APSIZE-Component Examples\bin\Debug\net6.0\wwwroot\_framework\Blazorise.dll.gz
+C:\Users\cabuk\source\repos\APSIZE Components\APSIZE-Component Examples\bin\Debug\net6.0\Blazorise.dll
+C:\Users\cabuk\source\repos\APSIZE Components\APSIZE-Component Examples\bin\Debug\net6.0\Blazorise.Icons.FontAwesome.dll
+C:\Users\cabuk\source\repos\APSIZE Components\APSIZE-Component Examples\obj\Debug\net6.0\build-gz\CFH3aiZg.gz
+C:\Users\cabuk\source\repos\APSIZE Components\APSIZE-Component Examples\obj\Debug\net6.0\build-gz\2pabBn2x.gz

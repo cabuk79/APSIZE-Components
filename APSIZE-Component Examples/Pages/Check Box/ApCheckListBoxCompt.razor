@@ -2,25 +2,41 @@
 
 <h2>Checkbox Square List</h2>
 
-<p>This component allows</p>
+<p>This componet is a check box that is square that can have any text images etc. in
+    the box.
+    <br />
+    When selected it changes and shows a border and a tick.
+    <br />
+    The boxes can be custmoized with the following attributes changable:
+    <ul>
+        <li>An image can be added and its width and height set.</li>
+        <li>The border colour can be specified.</li>
+        <li>The box background colour can be specified.</li>
+        <li>The box container height and width can also be set.</li>
+    </ul>
+</p>
+
+<i class="bi bi-activity"></i>
 
 <ApTabControl>
-    <ApTabPage Text="Demo" 
-    Image="https://image.shutterstock.com/image-photo/word-demo-appearing-behind-torn-260nw-1782295403.jpg"
+    <ApTabPage Text="Demo"     
     ImageHeight="50px" ImageWidth="50px">
-        <input type="text" @bind="@CheckBocBackColourString" />
+        <div class="row">
+            <input type="text" @bind="@CheckBocBackColourString" />
 
-        <br />
-        @CheckBocBackColourString
-
-        <ApCheckListBox Items="ItemsList" ContainerHeight="500px" ContainerWidth="150px" CheckBoxBackColour="@CheckBocBackColourString"
-                    CheckedBorderColour="red">
-            <ItemTemplate>
-                <img src="https://cdn1.vectorstock.com/i/1000x1000/31/95/user-sign-icon-person-symbol-human-avatar-vector-12693195.jpg"
-                 width="150px" height="150px" /><br />
-                @context
-            </ItemTemplate>
-        </ApCheckListBox>
+            <br />
+            @CheckBocBackColourString
+        </div>
+        <div class="row">
+            <ApCheckListBox Items="ItemsList" ContainerHeight="500px" ContainerWidth="150px" CheckBoxBackColour="@CheckBocBackColourString"
+                        CheckedBorderColour="red">
+                <ItemTemplate>
+                    <img src="https://cdn1.vectorstock.com/i/1000x1000/31/95/user-sign-icon-person-symbol-human-avatar-vector-12693195.jpg"
+                     width="150px" height="150px" /><br />
+                    @context
+                </ItemTemplate>
+            </ApCheckListBox>
+        </div>
     </ApTabPage>
     <ApTabPage Text="Code">
         <pre>
