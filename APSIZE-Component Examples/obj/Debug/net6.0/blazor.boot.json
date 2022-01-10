@@ -199,14 +199,14 @@
       "netstandard.dll": "sha256-E48Na3ZQWKExltzTwgP0Ao+UqWhiVYeerXfUL9lEc+c=",
       "System.Private.CoreLib.dll": "sha256-J85Z1XnwapHef31sR58JFq+0HrFP5BjOoObPKjdFHCw=",
       "APSIZE.Component.Templates.dll": "sha256-9qPdDvXSk+gmpR9Vz7CLIJTX\/F3zXFwafoXLt\/45yYw=",
-      "APSIZE-Component Examples.dll": "sha256-ibtAWYI2UtCFTsfzlvztaAlvZ4AX3fryYp2vh1qNizk="
+      "APSIZE-Component Examples.dll": "sha256-NHJPBkYS0FWbMKWut360dgyf4O77NZMZqgMKT7YiXI8="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
       "APSIZE.Component.Templates.pdb": "sha256-OhF9ArZZFqWnJkkC9MYM9dgEiK2ckkbm\/98+WqTtLP0=",
-      "APSIZE-Component Examples.pdb": "sha256-h0Nh6WyOPjZb1DVaWo1RlQDAHAOsnNaDCXrSLyg6IsE="
+      "APSIZE-Component Examples.pdb": "sha256-ocY+OQShmsDdOqgN4DyD72sb\/GwZwnTQtuP5kTq7jIY="
     },
     "runtime": {
       "dotnet.6.0.0.y3mcm140y9.js": "sha256-LOq52qjRa3+zt3w4UL10rS3UdwHxVQxW0JAsMPO9QAM=",

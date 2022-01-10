@@ -62,3 +62,26 @@ a, .btn-link {
     .blazor-error-boundary::after {
         content: "An error has occurred."
     }
+
+   /* Custom CSS*/
+
+   /* Tables */
+
+   /* Component property table */
+   .Property-table, th, td {
+       border: 1px solid black;
+   }
+
+   .Property-table {
+       width: 100%;
+   }
+
+   th {
+       text-align: center;
+       width: auto;
+   }
+
+   th, td {
+       padding: 10px;
+   }
+

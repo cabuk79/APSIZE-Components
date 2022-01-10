@@ -2,7 +2,7 @@
 .btn-tab-notselected[b-w8w5skxcg6] {
     width: fit-content;
     padding: 5px 20px 5px 20px;
-    margin: 0px 10px 0px 0px; 
+    margin: 1px 1px 0px 1px; 
     background-color: #0094ff;
     border: 0px;
     color: white;
@@ -11,7 +11,7 @@
 .btn-tab-selected[b-w8w5skxcg6] {
     width: fit-content;
     padding: 5px 20px 5px 20px;
-    margin: 0px 10px 0px 0px;
+    margin: 1px 1px 0px 1px;
     background-color: red;
     border: 0px;
     color: white;
@@ -26,14 +26,8 @@
 }
 
 .tab-content[b-w8w5skxcg6] {
-    margin: 10px;
+    margin: 0px;
     border: solid;
     padding: 10px;
 }
 
-input[type=text][b-w8w5skxcg6] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-}

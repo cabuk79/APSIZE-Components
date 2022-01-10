@@ -22,14 +22,34 @@
     <ApTabPage Text="Demo"     
     ImageHeight="50px" ImageWidth="50px">
         <div class="row">
-            <input type="text" @bind="@CheckBocBackColourString" />
-
-            <br />
-            @CheckBocBackColourString
+            <div class="col-lg-12">
+                <div class="row">
+                    <div col="col-lg-12">
+                        <h3>Properties</h3>
+                        <p>Change the properties below to see the effect on the check boxes.</p>
+                    </div>
+                </div>        
+                <div class="row">
+                    <div class="col-lg-2">Background colour:</div>
+                    <div class="col-lg-4"> <input type="text" @bind="@CheckBocBackColourString" /></div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2">Checked border colour:</div> 
+                    <div class="col-lg-4"><input type="text" @bind="@CheckBoxCheckedBorderColour" /></div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2">Container height:</div>
+                    <div class="col-lg-4"><input type="text" @bind="@CheckBoxContainerHeight" /></div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2">Container width:</div>
+                    <div class="col-lg-4"><input type="text" @bind="@CheckBoxContainerWidth" /></div>
+                </div>
+            </div>            
         </div>
         <div class="row">
-            <ApCheckListBox Items="ItemsList" ContainerHeight="500px" ContainerWidth="150px" CheckBoxBackColour="@CheckBocBackColourString"
-                        CheckedBorderColour="red">
+            <ApCheckListBox Items="ItemsList" ContainerHeight="@CheckBoxContainerHeight" ContainerWidth="@CheckBoxContainerWidth" CheckBoxBackColour="@CheckBocBackColourString"
+                        CheckedBorderColour="@CheckBoxCheckedBorderColour">
                 <ItemTemplate>
                     <img src="https://cdn1.vectorstock.com/i/1000x1000/31/95/user-sign-icon-person-symbol-human-avatar-vector-12693195.jpg"
                      width="150px" height="150px" /><br />
@@ -38,7 +58,7 @@
             </ApCheckListBox>
         </div>
     </ApTabPage>
-    <ApTabPage Text="Code">
+    <ApTabPage Text="Code">        
         <pre>
             <code>
                 //Handles any change of each check box from checked to not checked
@@ -58,12 +78,72 @@
             </code>
         </pre>
     </ApTabPage>
+    <ApTabPage Text="Usage">
+        
+            <pre>
+                   &lt;ApCheckListBox Items=&quot;ItemsList&quot; ContainerHeight=&quot;150px&quot; ContainerWidth=&quot;150px&quot; CheckBoxBackColour=&quot;blue&quot;
+                        CheckedBorderColour=&quot;red&quot;&gt;
+                    &lt;ItemTemplate&gt;
+                        &lt;img src=&quot;https://cdn1.vectorstock.com/i/1000x1000/31/95/user-sign-icon-person-symbol-human-avatar-vector-12693195.jpg&quot;
+                            width=&quot;150px&quot; height=&quot;150px&quot; /&gt;&lt;br /&gt;
+                        context
+                    &lt;/ItemTemplate&gt;
+                &lt;/ApCheckListBox&gt;
+            </pre>
+      
+    </ApTabPage>
+    <ApTabPage Text="Properties">
+        <div class="row">
+            <div class="col-lg-12">
+                <h3>Properties</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <table class="Property-table">
+                    <tr>
+                        <th>Property Name</th>
+                        <th>Value Type</th>
+                        <th>Details</th>
+                    </tr>
+                    <tr>
+                        <td>CheckBoxBackColour</td>
+                        <td>string</td>
+                        <td>This property takes a string of colour such as red or the hex code such as #ff0000</td>
+                    </tr> 
+                    <tr>
+                        <td>CheckedBorderColour</td>
+                        <td>string</td>
+                        <td>This property takes a string of colour such as red or the hex code such as #ff0000</td>
+                    </tr>
+                    <tr>
+                        <td>ContainerHeight</td>
+                        <td>string</td>
+                        <td>This property takes a string of size required with px at the end of the number.
+                            <br />for example 150px
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>ContainerWidth</td>
+                        <td>string</td>
+                        <td>This property takes a string of size required with px at the end of the number.
+                            <br />for example 150px
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+    </ApTabPage>
 </ApTabControl>
 
 
 @code {
 
     public string CheckBocBackColourString { get; set; }
+    public string CheckBoxCheckedBorderColour { get; set; }
+    public string CheckBoxContainerHeight { get; set; }
+    public string CheckBoxContainerWidth { get; set; }
 
     public List<string> ItemsList { get; set; } = new();
 
