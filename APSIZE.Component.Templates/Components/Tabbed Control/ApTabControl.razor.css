@@ -2,8 +2,8 @@
 .btn-tab-notselected {
     width: fit-content;
     padding: 5px 20px 5px 20px;
-    margin: 1px 1px 0px 1px; 
-    background-color: #0094ff;
+    margin: 1px 1px 0px 1px;
+    background-color: #05183C;
     border: 0px;
     color: white;
 }
@@ -11,7 +11,7 @@
 .btn-tab-selected {
     width: fit-content;
     padding: 5px 20px 5px 20px;
-    margin: 1px 1px 0px 1px;
+    margin: 1px 1px -1px 1px;
     background-color: red;
     border: 0px;
     color: white;

@@ -12,12 +12,10 @@
             @if (SelectedItems.Contains(item))
             {
                 <input id="@Id" type="checkbox" class="checkbox" checked @onchange="_ => HandleChange(item)" disabled="@Disabled"/>
-                //var i = 5;
             }
             else
             {
                 <input id="@Id" type="checkbox" class="checkbox" @onchange="_ => HandleChange(item)" disabled="@Disabled" />
-                //var ii = 6;
             }
             <div class="option_inner theme">
                 <div class="tickmark"></div>
@@ -71,7 +69,7 @@
     string CheckBoxBackColourStyle => string.IsNullOrWhiteSpace(CheckBoxBackColour) ? "" : "--bg-color:" + CheckBoxBackColour;
 
     [Parameter]
-    public string ContainerHeight { get; set; }
+    public string ContainerHeight { get; set; } 
     [Parameter]
     public string ContainerWidth { get; set; }
     string ConatinerHeightStyle => string.IsNullOrWhiteSpace(ContainerHeight) ? "" : "--cont-height:" + ContainerHeight;

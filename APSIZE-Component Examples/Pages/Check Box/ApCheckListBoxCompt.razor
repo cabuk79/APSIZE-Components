@@ -13,13 +13,16 @@
         <li>The border colour can be specified.</li>
         <li>The box background colour can be specified.</li>
         <li>The box container height and width can also be set.</li>
+        <li>The list can be a list of string, int etc. or objects.</li>
     </ul>
+    <br />
+    Using the ItemTemplate tag the context can be used to set the look and content of the checkbox.  For example a list of objects with a string and image using layout can have the image and text together.
 </p>
 
 <i class="bi bi-activity"></i>
 
 <ApTabControl>
-    <ApTabPage Text="Demo"     
+    <ApTabPage Text="Demo - String List"     
     ImageHeight="50px" ImageWidth="50px">
         <div class="row">
             <div class="col-lg-12">
@@ -51,46 +54,77 @@
             <ApCheckListBox Items="ItemsList" ContainerHeight="@CheckBoxContainerHeight" ContainerWidth="@CheckBoxContainerWidth" CheckBoxBackColour="@CheckBocBackColourString"
                         CheckedBorderColour="@CheckBoxCheckedBorderColour">
                 <ItemTemplate>
-                    <img src="https://cdn1.vectorstock.com/i/1000x1000/31/95/user-sign-icon-person-symbol-human-avatar-vector-12693195.jpg"
-                     width="150px" height="150px" /><br />
                     @context
                 </ItemTemplate>
             </ApCheckListBox>
         </div>
     </ApTabPage>
-    <ApTabPage Text="Code">        
+    <ApTabPage Text="Demo - List of Objects">
+        <ApCheckListBox Items="People" ContainerHeight="@CheckBoxContainerHeight" ContainerWidth="@CheckBoxContainerWidth" CheckBoxBackColour="@CheckBocBackColourString"
+                        CheckedBorderColour="@CheckBoxCheckedBorderColour" Context="Person">
+                <ItemTemplate>
+                    <img src="@Person.Image" width="150px" height="150px" />
+                    <br />
+                    @Person.FullName;
+                </ItemTemplate>
+            </ApCheckListBox>
+    </ApTabPage>
+    <ApTabPage Text="Usage">  
+        <h3>Using List of String</h3>
         <pre>
-            <code>
-                //Handles any change of each check box from checked to not checked
-                void HandleChange(TItem item)
-                {
-                    if (SelectedItems.Contains(item))
-                    {
-                        SelectedItems.Remove(item);
-                    }
-                    else
-                    {
-                        SelectedItems.Add(item);
-                    }
+&lt;ApCheckListBox Items=&quot;ItemsList&quot; ContainerHeight=&quot;150px&quot; ContainerWidth=&quot;150px&quot; CheckBoxBackColour=&quot;blue&quot;
+    CheckedBorderColour=&quot;red&quot;&gt;
+&lt;ItemTemplate&gt;
+    &lt;img src=&quot;https://cdn1.vectorstock.com/i/1000x1000/31/95/user-sign-icon-person-symbol-human-avatar-vector-12693195.jpg&quot;
+        width=&quot;150px&quot; height=&quot;150px&quot; /&gt;&lt;br /&gt;
+    &#64;context
+&lt;/ItemTemplate&gt;
+&lt;/ApCheckListBox&gt;
 
-                    SelectedItemsChanged.InvokeAsync(SelectedItems);
-                }
+            <code>
+public List&lt;string&lt; ItemsList { get; set; } = new();
+
+protected override async Task OnInitializedAsync()
+{
+    ItemsList.Add("Craig");
+    ItemsList.Add("Steve");
+}
+            </code>
+        </pre>  
+
+        <hr />
+
+        <h3>Using List of Objects</h3><br />
+        <pre>
+
+&lt;ApCheckListBox Items=&quot;People&quot; ContainerHeight=&quot;&#64;CheckBoxContainerHeight&quot; ContainerWidth=&quot;&#64;CheckBoxContainerWidth&quot; CheckBoxBackColour=&quot;&#64;CheckBocBackColourString&quot;
+            CheckedBorderColour=&quot;&#64;CheckBoxCheckedBorderColour&quot; Context=&quot;Person&quot;&gt;
+    &lt;ItemTemplate&gt;
+        &lt;img src=&quot;&#64;Person.Image&quot; width=&quot;150px&quot; height=&quot;150px&quot; /&gt;
+        &lt;br /&gt;
+        Person.Name;
+    &lt;/ItemTemplate&gt;
+&lt;/ApCheckListBox&gt;
+
+            <code>
+public List&lt;Person&gt; People { get; set; } = new();
+
+protected override async Task OnInitializedAsync()
+{
+    ItemsList.Add("Craig");
+    ItemsList.Add("Steve");
+
+    People.Add(new Person { Name = "Craig", Image = "https://cdn1.vectorstock.com/i/1000x1000/31/95/user-sign-icon-person-symbol-human-avatar-vector-12693195.jpg&quot" });
+    People.Add(new Person { Name = "Jason", Image = "https://cdn1.vectorstock.com/i/1000x1000/31/95/user-sign-icon-person-symbol-human-avatar-vector-12693195.jpg&quot" });
+}
+
+public class Person
+{
+    public string Name { get; set; }
+    public string Image { get; set; }
+}
             </code>
         </pre>
-    </ApTabPage>
-    <ApTabPage Text="Usage">
-        
-            <pre>
-                   &lt;ApCheckListBox Items=&quot;ItemsList&quot; ContainerHeight=&quot;150px&quot; ContainerWidth=&quot;150px&quot; CheckBoxBackColour=&quot;blue&quot;
-                        CheckedBorderColour=&quot;red&quot;&gt;
-                    &lt;ItemTemplate&gt;
-                        &lt;img src=&quot;https://cdn1.vectorstock.com/i/1000x1000/31/95/user-sign-icon-person-symbol-human-avatar-vector-12693195.jpg&quot;
-                            width=&quot;150px&quot; height=&quot;150px&quot; /&gt;&lt;br /&gt;
-                        context
-                    &lt;/ItemTemplate&gt;
-                &lt;/ApCheckListBox&gt;
-            </pre>
-      
     </ApTabPage>
     <ApTabPage Text="Properties">
         <div class="row">
@@ -130,26 +164,71 @@
                             <br />for example 150px
                         </td>
                     </tr>
+                    <tr>
+                        <td>Items</td>
+                        <td>List</td>
+                        <td>The list can be of string, int, or objects.
+                            This is what sets the items for the checkboxes.
+                        </td>
+                    </tr>
                 </table>
             </div>
         </div>
+    </ApTabPage>
+    <ApTabPage Text="Source Code - Component">        
+        <pre>
+            <code>
+                //Handles any change of each check box from checked to not checked
+                void HandleChange(TItem item)
+                {
+                    if (SelectedItems.Contains(item))
+                    {
+                        SelectedItems.Remove(item);
+                    }
+                    else
+                    {
+                        SelectedItems.Add(item);
+                    }
 
+                    SelectedItemsChanged.InvokeAsync(SelectedItems);
+                }
+            </code>
+        </pre>
     </ApTabPage>
 </ApTabControl>
 
 
 @code {
-
     public string CheckBocBackColourString { get; set; }
     public string CheckBoxCheckedBorderColour { get; set; }
-    public string CheckBoxContainerHeight { get; set; }
-    public string CheckBoxContainerWidth { get; set; }
+    public string CheckBoxContainerHeight { get; set; } = "300px";
+    public string CheckBoxContainerWidth { get; set; } = "300px";
 
     public List<string> ItemsList { get; set; } = new();
+    public List<Person> People { get; set; } = new();
 
     protected override async Task OnInitializedAsync()
     {
         ItemsList.Add("Craig");
         ItemsList.Add("Steve");
+        ItemsList.Add("Bob");
+
+        People.Add(new Person { FirstName = "Craig", LastName = "Brunton", Image = "https://cdn1.vectorstock.com/i/1000x1000/31/95/user-sign-icon-person-symbol-human-avatar-vector-12693195.jpg&quot" });
+        People.Add(new Person { FirstName = "Jason", LastName = "Jones", Image = "https://cdn1.vectorstock.com/i/1000x1000/31/95/user-sign-icon-person-symbol-human-avatar-vector-12693195.jpg&quot" });
+    }
+
+    public class Person
+    {
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public string Image { get; set; }
+
+        public string FullName
+        {
+            get
+            {
+                return FirstName + " " + LastName;
+            }
+        }   
     }
 }

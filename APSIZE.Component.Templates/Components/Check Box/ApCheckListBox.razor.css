@@ -27,8 +27,8 @@
     .container .option_item {
         display: block;
         position: relative;
-        width: var(--cont-width, 100px); /*500px;*/
-        height: var(--cont-height, 100px); /* 500px;*/
+        width: var(--cont-width, 150px); /*500px;*/
+        height: var(--cont-height, 150px); /* 500px;*/
         margin: 10px;
     }
 

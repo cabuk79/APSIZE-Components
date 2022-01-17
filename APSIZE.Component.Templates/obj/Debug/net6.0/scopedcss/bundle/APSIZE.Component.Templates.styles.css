@@ -28,8 +28,8 @@
     .container .option_item[b-hu24382mj7] {
         display: block;
         position: relative;
-        width: var(--cont-width, 100px); /*500px;*/
-        height: var(--cont-height, 100px); /* 500px;*/
+        width: var(--cont-width, 150px); /*500px;*/
+        height: var(--cont-height, 150px); /* 500px;*/
         margin: 10px;
     }
 
@@ -105,8 +105,8 @@
 .btn-tab-notselected[b-w8w5skxcg6] {
     width: fit-content;
     padding: 5px 20px 5px 20px;
-    margin: 1px 1px 0px 1px; 
-    background-color: #0094ff;
+    margin: 1px 1px 0px 1px;
+    background-color: #05183C;
     border: 0px;
     color: white;
 }
@@ -114,7 +114,7 @@
 .btn-tab-selected[b-w8w5skxcg6] {
     width: fit-content;
     padding: 5px 20px 5px 20px;
-    margin: 1px 1px 0px 1px;
+    margin: 1px 1px -1px 1px;
     background-color: red;
     border: 0px;
     color: white;
