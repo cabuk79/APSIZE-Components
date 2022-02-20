@@ -830,3 +830,4 @@ C:\Users\cabuk\source\repos\APSIZE Components\APSIZE-Component Examples\bin\Debu
 C:\Users\cabuk\source\repos\APSIZE Components\APSIZE-Component Examples\bin\Debug\net6.0\Blazorise.Icons.FontAwesome.dll
 C:\Users\cabuk\source\repos\APSIZE Components\APSIZE-Component Examples\obj\Debug\net6.0\build-gz\CFH3aiZg.gz
 C:\Users\cabuk\source\repos\APSIZE Components\APSIZE-Component Examples\obj\Debug\net6.0\build-gz\2pabBn2x.gz
+C:\Users\cabuk\source\repos\APSIZE Components\APSIZE-Component Examples\obj\Debug\net6.0\scopedcss\Pages\Buttons\GenericButton.razor.rz.scp.css

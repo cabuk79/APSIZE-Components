@@ -17,3 +17,4 @@ C:\Users\cabuk\source\repos\APSIZE Components\APSIZE.Component.Templates\obj\Deb
 C:\Users\cabuk\source\repos\APSIZE Components\APSIZE.Component.Templates\obj\Debug\net6.0\scopedcss\Components\Check Box\ApCheckListBox.razor.rz.scp.css
 C:\Users\cabuk\source\repos\APSIZE Components\APSIZE.Component.Templates\obj\Debug\net6.0\scopedcss\projectbundle\APSIZE.Component.Templates.bundle.scp.css
 C:\Users\cabuk\source\repos\APSIZE Components\APSIZE.Component.Templates\obj\Debug\net6.0\scopedcss\Components\Tabbed Control\ApTabControl.razor.rz.scp.css
+C:\Users\cabuk\source\repos\APSIZE Components\APSIZE.Component.Templates\obj\Debug\net6.0\scopedcss\Components\Buttons\GeneralButton.razor.rz.scp.css

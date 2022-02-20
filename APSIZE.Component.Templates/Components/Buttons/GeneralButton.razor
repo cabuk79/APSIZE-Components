@@ -1,0 +1,35 @@
+﻿
+<button class="btn @CssClass"
+style="@ButtonBackgroundColourStyle; @ButtonBorderColourStyle; @ButtonBorderRadiusStyle; @ButtonTextColourStyle"
+>@Text</button>
+
+
+
+@code {
+
+    [Parameter]
+    public string CssClass { get; set; }
+
+    [Parameter]
+    public string Text { get; set; }
+
+
+    #region CSS Styling
+
+    [Parameter]
+    public string ButtonBackgroundColour { get; set; }
+    string ButtonBackgroundColourStyle => string.IsNullOrWhiteSpace(ButtonBackgroundColour) ? "" : "--bg-color:" + ButtonBackgroundColour;
+
+    [Parameter]
+    public string ButtonBorderColour { get; set; }
+    string ButtonBorderColourStyle => string.IsNullOrWhiteSpace(ButtonBorderColour) ? "" : "--border-color:" + ButtonBorderColour;
+
+    [Parameter]
+    public string ButtonBorderRadius { get; set; }
+    string ButtonBorderRadiusStyle => string.IsNullOrWhiteSpace(ButtonBorderRadius) ? "" : "--border-radius:" + ButtonBorderRadius;
+
+    [Parameter]
+    public string ButtonTextColour { get; set; }
+    string ButtonTextColourStyle => string.IsNullOrWhiteSpace(ButtonTextColour) ? "" : "--text-color:" + ButtonTextColour;
+    #endregion
+}

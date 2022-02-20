@@ -1,3 +1,17 @@
+/* /Pages/Buttons/GenericButton.razor.rz.scp.css */
+.flex-container[b-z9if4icaz7] {
+    display: flex;
+    background-color: red;
+}
+
+.item[b-z9if4icaz7] {
+    flex: 1 1 150px;
+    padding: 20px;
+}
+
+.h2[b-z9if4icaz7] {
+    color: red;
+}
 /* /Shared/MainLayout.razor.rz.scp.css */
 .page[b-q0jjso8es3] {
     position: relative;

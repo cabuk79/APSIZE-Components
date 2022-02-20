@@ -198,15 +198,15 @@
       "mscorlib.dll": "sha256-tlYWYAypJO+6gsCjV734iAJn8xcZYhUjM7vgxDLJluE=",
       "netstandard.dll": "sha256-E48Na3ZQWKExltzTwgP0Ao+UqWhiVYeerXfUL9lEc+c=",
       "System.Private.CoreLib.dll": "sha256-J85Z1XnwapHef31sR58JFq+0HrFP5BjOoObPKjdFHCw=",
-      "APSIZE.Component.Templates.dll": "sha256-bDdIS12biJRzPQpa4+yI2U2DvEqWgLDHOE6GW0xS0Ts=",
-      "APSIZE-Component Examples.dll": "sha256-O2bw1NKP0eGhc2A1NHa6Bei0YUMUaKlUtzL4HtjsPzI="
+      "APSIZE.Component.Templates.dll": "sha256-IlQcR40IEY0pMugTvT8klESp32JnJ9G+1cnA9cHJJfI=",
+      "APSIZE-Component Examples.dll": "sha256-NvImFZrqGxYgVpchRnPOIIH0Ekvl76pgmCGSumWxg1s="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "APSIZE.Component.Templates.pdb": "sha256-aOdKp0m6A\/UcC4eoMU9GqRlC4IyXhVwZNAFRAMfBFDE=",
-      "APSIZE-Component Examples.pdb": "sha256-bESD\/VkIc3S3wP0YfLSICOdtuJm+y+etXGWqex1mgNo="
+      "APSIZE.Component.Templates.pdb": "sha256-bvvtoz7dXVYHjp\/LdTFkTSeBRPBYwpw\/LYzPIFxDk\/M=",
+      "APSIZE-Component Examples.pdb": "sha256-2OmTRs89JEKOMYivjnFQvtmUZ5zoHtKEf0TByxDJGvM="
     },
     "runtime": {
       "dotnet.6.0.0.y3mcm140y9.js": "sha256-LOq52qjRa3+zt3w4UL10rS3UdwHxVQxW0JAsMPO9QAM=",

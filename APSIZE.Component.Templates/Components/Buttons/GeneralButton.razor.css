@@ -1,0 +1,65 @@
+﻿.btn {
+    border: 2px solid;
+    border-color: var(--border-color, black);
+    border-radius: var(--border-radius, 5px);
+    cursor: pointer;
+    background-color: var(--bg-color, black);
+    color: var(--text-color, white);
+}
+
+.btn:hover {
+    opacity: 80%;
+}
+
+.primary {
+    border: 2px solid blue;
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+}
+
+    .primary:hover {
+        background-color: white;
+        color: blue;
+    }
+
+.secondary {
+    border: 2px solid purple;
+    border-radius: 5px;
+    background-color: purple;
+    color: white;
+}
+
+    .secondary:hover {
+        border: 2px solid purple;
+        text-decoration-color: purple;
+        background-color: white;
+        color: purple;
+    }
+
+.success {
+    border: 2px solid green;
+    color: white;
+    background-color: green;
+}
+
+    .success:hover {
+        border: 2px solid green;
+        text-decoration-color: green;
+        background-color: white;
+        color: green;
+    }
+
+.danger {
+    border: 2px solid red;
+    color: white;
+    background-color: red;
+}
+
+    .danger:hover {
+        border: 2px solid red;
+        text-decoration-color: red;
+        background-color: white;
+        color: red;
+    }
+
